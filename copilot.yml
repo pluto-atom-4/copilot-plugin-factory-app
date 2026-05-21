@@ -1,0 +1,60 @@
+name: "factory-app-session-blog"
+version: "1.0.0"
+description: "GitHub Copilot CLI plugin for factory-app-session-blog skill - Portfolio-ready documentation for full-stack monorepo work"
+author: "pluto-atom-4"
+homepage: "https://github.com/pluto-atom-4/copilot-plugin-factory-app"
+repository: "pluto-atom-4/copilot-plugin-factory-app"
+license: "MIT"
+
+# Plugin metadata for marketplace discovery
+metadata:
+  categories:
+    - "documentation"
+    - "portfolio"
+    - "blogging"
+    - "full-stack"
+  tags:
+    - "architectural-patterns"
+    - "session-documentation"
+    - "gist-generation"
+    - "portfolio-pieces"
+  keywords:
+    - "blog"
+    - "documentation"
+    - "portfolio"
+    - "monorepo"
+    - "full-stack"
+
+# Skills provided by this plugin
+skills:
+  - name: "factory-app-session-blog"
+    displayName: "Factory App Session Blog"
+    description: "Document full-stack monorepo work as portfolio-ready blog posts, gists, and portfolio pieces"
+    usage: "/factory-app-session-blog <topic or work description>"
+    examples:
+      - "/factory-app-session-blog I just implemented a shared transaction pattern for EF Core + Dapper"
+      - "/factory-app-session-blog Document the type-safety pipeline architectural work"
+      - "/factory-app-session-blog Create a blog post on my portfolio about DataLoader performance optimization"
+    tags:
+      - "documentation"
+      - "portfolio"
+      - "blogging"
+    features:
+      - "Extracts architectural patterns from session work"
+      - "Synthesizes professional gists"
+      - "Generates portfolio-ready documentation"
+      - "Focuses on benefits and lessons learned"
+      - "Quantifies ROI and outcomes"
+
+# Required Copilot CLI version
+minimumCliVersion: "1.0.0"
+
+# Permissions this plugin requests
+permissions:
+  - "file:read"          # Read session files and context
+  - "file:create"        # Create documentation files
+  - "github:read"        # Read repository information for context
+  - "github:create"      # Create gists and publish documentation
+
+# Environment variables (optional)
+env: {}
