@@ -1,0 +1,42 @@
+{
+  "name": "factory-app-session-blog",
+  "version": "1.0.0",
+  "displayName": "Factory App Session Blog",
+  "description": "GitHub Copilot CLI plugin for factory-app-session-blog skill - Portfolio-ready documentation for full-stack monorepo work",
+  "author": "pluto-atom-4",
+  "license": "MIT",
+  "homepage": "https://github.com/pluto-atom-4/copilot-plugin-factory-app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pluto-atom-4/copilot-plugin-factory-app.git"
+  },
+  "keywords": [
+    "documentation",
+    "portfolio",
+    "blogging",
+    "full-stack",
+    "monorepo",
+    "architectural-patterns"
+  ],
+  "skills": [
+    {
+      "name": "factory-app-session-blog",
+      "displayName": "Factory App Session Blog",
+      "description": "Document full-stack monorepo work as portfolio-ready blog posts, gists, and portfolio pieces",
+      "usage": "/factory-app-session-blog <topic or work description>",
+      "examples": [
+        "/factory-app-session-blog I just implemented a shared transaction pattern for EF Core + Dapper",
+        "/factory-app-session-blog Document the type-safety pipeline architectural work",
+        "/factory-app-session-blog Create a blog post on my portfolio about DataLoader performance optimization"
+      ],
+      "tags": ["documentation", "portfolio", "blogging"]
+    }
+  ],
+  "permissions": [
+    "file:read",
+    "file:create",
+    "github:read",
+    "github:create"
+  ],
+  "minimumCliVersion": "1.0.0"
+}
